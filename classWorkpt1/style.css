@@ -11,8 +11,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin: 0;
 }
+.stats-container h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.game-header {
+    
+    align-items: center;
+    margin-top: 10px;
+}   
 .card-flip {
     transform: rotateY(180deg);
     height: inherit;
@@ -58,11 +68,16 @@ body {
     cursor: pointer;
 }
 
+.stats-container p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 .stats-container {
 
     align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 5px;
+    margin: 0;
 }
 
 /* The actual flipping logic via a class */
@@ -97,7 +112,7 @@ body {
 }
 
 .reset-btn {
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: var(--accent);
