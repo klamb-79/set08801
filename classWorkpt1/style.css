@@ -38,24 +38,31 @@ body {
     cursor: pointer;
     background-color: #48bb78;
     color: #48bb78;
+    border-radius: 12px;
+}
+.game-card ,img {
+    
+    border-radius: 12px;
 }
 
 .memory-game {
-    padding-top: 10px;
+    padding: 10px;
     width: 900px;
     height: 640px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 10px;
     justify-items: center;
     align-items: center;
+    border-radius: 12px;
     
 
     perspective: 1000px;
     /* Essential for 3D effect */
-    border: #48bb78 solid 2px;
+    
+    box-shadow: 5px 5px 15px -7px #000000;;
 
 }
 
@@ -112,7 +119,7 @@ body {
 }
 
 .reset-btn {
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 10px 20px;
     font-size: 1rem;
     background-color: var(--accent);
