@@ -5,13 +5,15 @@ const resetButton = document.getElementById('reset-btn');
 
 
 // Zen icons/emojis
-const icons = ['🌿', '🌸', '🌊', '🏔️', '🎋', '🧘', '☀️', '☁️'];
-let cards = [...icons, ...icons]; // Duplicate for pairs
+//const icons = ['🌿', '🌸', '🌊', '🏔️', '🎋', '🧘', '☀️', '☁️'];
+const bzAnimals = [ 'baboon.jpg', 'butterfly.jpg', 'egale.jpg', 'jag.jpg', 'owl.jpg', 'parrot.jpg', 'snake.jpg', 'toucan.jpg', 'toucan2.jpg', 'tapir.jpg' ];
+let cards = [...bzAnimals, ...bzAnimals]; // Duplicate for pairs
 let flippedCards = [];
 let moves = 0;
 let matchedCount = 0;
 
 function initGame() {
+   //const board = document.getElementById('game-board');
     board.innerHTML = '';
     moves = 0;
     matchedCount = 0;
@@ -20,16 +22,17 @@ function initGame() {
     // Shuffle the array
     cards.sort(() => Math.random() - 0.5);
 
-    cards.forEach((icon, index) => {
+    cards.forEach((ImgSrc) => {
         const card = document.createElement('div');
         card.classList.add('card');
-        card.dataset.icon = icon;
+        card.dataset.icon = ImgSrc;
         card.innerHTML = `
             <div class="card-face card-back"></div>
-            <div class="card-front">${icon}</div>
+            <div class="card-front"><img src="./images/${ImgSrc}" alt="Animal"></div>
         `;
         card.addEventListener('click', flipCard);
         board.appendChild(card);
+       
 
     });
     

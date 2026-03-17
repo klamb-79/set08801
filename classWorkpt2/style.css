@@ -35,8 +35,9 @@ body {
     width: 900px;
     height: 640px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
     grid-column-gap: 0px;
     grid-row-gap: 10px;
     justify-items: center;
@@ -88,12 +89,18 @@ body {
     z-index: 2;
 
 }
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This crops the image to fill the square without stretching */
+    border-radius: 8px; /* Matches the card corners */
+}
 
 .card-front {
-    background-color: #ffffff;
-    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
     transform: rotateY(180deg);
-    font-size: 7rem;
 }
 
 .reset-btn {
