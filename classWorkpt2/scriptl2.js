@@ -8,8 +8,8 @@ const nextLevelButton = document.querySelector('.next-level');
 
 // Zen icons/emojis
 //const icons = ['🌿', '🌸', '🌊', '🏔️', '🎋', '🧘', '☀️', '☁️'];
-const bzAnimals = [ 'baboon.jpg', 'butterfly.jpg', 'egale.jpg', 'jag.jpg', 'owl.jpg', 'parrot.jpg', 'snake.jpg', 'toucan.jpg', 'toucan2.jpg', 'tapir.jpg' ];
-let cards = [...bzAnimals, ...bzAnimals]; // Duplicate for pairs
+const superCars = [ 'car1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg', 'car6.jpg', 'car7.jpg', 'car8.jpg', 'car9.jpg', 'car10.jpg', 'car11.jpg', 'car12.jpg', 'car13.jpg', 'car14.jpg', 'car15.jpg' ];
+let cards = [...superCars, ...superCars]; // Duplicate for pairs
 let flippedCards = [];
 let moves = 0;
 let matchedCount = 0;
@@ -30,7 +30,7 @@ function initGame() {
         card.dataset.icon = ImgSrc;
         card.innerHTML = `
             <div class="card-face card-back"></div>
-            <div class="card-front"><img src="./images/${ImgSrc}" alt="Animal"></div>
+            <div class="card-front"><img src="./images/${ImgSrc}" alt="Super Car"></div>
         `;
         card.addEventListener('click', flipCard);
         board.appendChild(card);
