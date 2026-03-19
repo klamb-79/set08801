@@ -12,10 +12,10 @@
 .memory-game {
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 900px;
+    width: 1000px;
     height: 700px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     /*grid-template-rows: repeat(3, 1fr);*/
     grid-column-gap: 0px;
     grid-row-gap: 10px;

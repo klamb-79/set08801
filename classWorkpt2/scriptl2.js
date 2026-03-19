@@ -8,7 +8,7 @@ const nextLevelButton = document.querySelector('.next-level');
 
 // Zen icons/emojis
 //const icons = ['🌿', '🌸', '🌊', '🏔️', '🎋', '🧘', '☀️', '☁️'];
-const superCars = [ 'car1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg', 'car6.jpg', 'car7.jpg', 'car8.jpg', 'car9.jpg', 'car10.jpg', 'car11.jpg', 'car12.jpg', 'car13.jpg', 'car14.jpg', 'car15.jpg' ];
+const superCars = ['car1.jpg', 'car2.jpg', 'car3.jpg', 'car4.jpg', 'car5.jpg', 'car6.jpg', 'car7.jpg', 'car8.jpg', 'car9.jpg', 'car10.jpg', 'car11.jpg', 'car12.jpg', 'car13.jpg', 'car14.jpg', 'car15.jpg'];
 let cards = [...superCars, ...superCars]; // Duplicate for pairs
 let flippedCards = [];
 let moves = 0;
@@ -34,6 +34,7 @@ function initGame() {
         `;
         card.addEventListener('click', flipCard);
         board.appendChild(card);
+        console.log(`Added card with image: ${ImgSrc}`);
        
 
     });
@@ -80,8 +81,8 @@ resetButton.addEventListener('click', () => {
         
         initGame(); 
     });
-nextLevelButton.addEventListener('click', () => {
-    window.location.href = 'index2.html'; // Redirect to the next level page
+/*nextLevelButton.addEventListener('click', () => {
+    window.location.href = 'level.html'; // Redirect to the next level page
     // Here you can implement logic to load the next level, such as changing the card set or increasing difficulty.
-});
+});*/
 initGame();
