@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Hello, JavaScript!</title>
+  </head>
+  <body>
+    <h1>Hello, JavaScript!</h1>
+    <p>This is a simple HTML page with a JavaScript alert.</p>
+    <button id="hellobutton">Hello</button>
+    <script>
+      document.getElementById('hellobutton').onclick = function() {
+
+            alert('Hello world!');    
+
+            var myTextNode = document.createTextNode('Some new words.');
+
+            document.body.appendChild(myTextNode);  
+
+        };
+    </script>
+  </body>
+</html>
